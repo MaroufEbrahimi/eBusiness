@@ -11,8 +11,6 @@
 * CSS-transition
 * animations
 
-# getting started
-
 
 # Would you like to help and support me?
 * Star Github repository
