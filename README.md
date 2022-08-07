@@ -10,6 +10,7 @@
 * Full Responsive
 * CSS-transition
 * animations
+* bootstrap_icons
 
 
 # Would you like to help and support me?
