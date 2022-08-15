@@ -1,7 +1,28 @@
 
-
 // Script for slider
-var index = 1;
+// const slider = document.querySelector('.slides');
+
+// const newImgDelay = 3000;
+// let currentImg = 0;
+
+// slider[currentImg].style.opacity = 1;
+
+// setInterval(() => {
+//     nextImgFun();
+// }, nextImgDelay);
+
+// function nextImgFun() {
+//     slider[currentImg].style.zIndex = -2;
+//     const temp = currentImg;
+//     setTimeout(() => {
+//         slider[temp].style.opacity = 0;
+//     }, 1000);
+//     currentImg = (currentImg + 1) % slider.length;
+//     slider[currentImg].style.opacity = 1;
+//     slider[currentImg].style.zIndex = -1;
+// }
+
+// var index = 1;
 slideShow(index);
 
 function plusSlides(n) {
@@ -16,15 +37,15 @@ function slideShow(n) {
     var a;
     var slides = document.getElementsByClassName('slides');
     var dots = document.getElementsByClassName('dot');
-    if(n > slides.length) {
+    if (n > slides.length) {
         index = 1;
-    }else if (n < 1) {
+    } else if (n < 1) {
         index = slides.length;
     }
-    for(a=0; a < slides.length; a++) {
+    for (a = 0; a < slides.length; a++) {
         slides[a].style.display = "none";
     }
-    for(a = 0; a < dots.length; a++) {
+    for (a = 0; a < dots.length; a++) {
         dots[a].className = dots[a].className.replace(" active", "");
     }
     slides[index - 1].style.display = "block";
@@ -46,15 +67,15 @@ function closeSlideMenu() {
     var goUp = document.getElementById('up-arrow');
 
     function setGoUpBtnVisibality() {
-        if(window.scrollY <= 150){
+        if (window.scrollY <= 150) {
             goUp.fadeOut();
-        }else {
+        } else {
             goUp.fadeIn();
         }
     }
 
     window.addEventListener('scroll', setGoUpBtnVisibality);
-    goUp.addEventListener('click', function(){
+    goUp.addEventListener('click', function () {
         this.scrollTo(0, 0);
     });
 }());
@@ -63,7 +84,7 @@ function closeSlideMenu() {
 function myFadeIn(ele) {
     var elementOpa = Number(getComputedStyle(ele).opacity).toPrecision(2);
     ele.style.opacity = elementOpa;
-    if(elementOpa >= 1) {
+    if (elementOpa >= 1) {
         return;
     }
 
@@ -76,7 +97,7 @@ function myFadeIn(ele) {
 function myFadeOut(ele) {
     var elementOpa = Number(getComputedStyle(ele).opacity).toPrecision(2);
 
-    if(elementOpa <= 0){
+    if (elementOpa <= 0) {
         return;
     }
 
@@ -86,10 +107,10 @@ function myFadeOut(ele) {
     }, 10);
 }
 
-Element.prototype.fadeIn = function() {
+Element.prototype.fadeIn = function () {
     myFadeIn(this);
 }
-Element.prototype.fadeOut = function() {
+Element.prototype.fadeOut = function () {
     myFadeOut(this);
 }
 // End of Up arrow
