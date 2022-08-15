@@ -206,60 +206,18 @@ header .nav-bar ul li a:active {
 .showcase {
     width: 100%;
     height: 100vh;
-    background: #000;
     overflow: hidden;
     position: relative;
 }
 
-.showcase .slides {
-    display: none;
-}
-
-.showcase .slides {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.showcase .slider-container {
+.showcase .slides img {
     width: 100%;
     height: 100vh;
-    position: relative;
-    margin: auto;
+    filter: brightness(40%);
+    object-fit: cover;
 }
 
-.showcase .slider-container img {
-    width: 100%;
-    height: 100vh;
-}
-
-.showcase .previous,
-.next {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #000;
-    font-weight: bold;
-    font-size: 22px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    cursor: pointer;
-}
-
-.showcase .previous:hover,
-.showcase .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: var(--general-color);
-}
-
-.showcase .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.showcase .slider-container .text {
+.showcase .slides .text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -269,12 +227,12 @@ header .nav-bar ul li a:active {
     margin: 30px auto;
 }
 
-.showcase .slider-container .text h1 {
+.showcase .slides .text h1 {
     font-size: 1.5em;
     margin: 30px auto;
 }
 
-.showcase .slider-container .text p {
+.showcase .slides .text p {
     font-size: 38px;
     margin: 0 auto 30px auto;
     line-height: 1.2;
@@ -297,6 +255,33 @@ header .nav-bar ul li a:active {
 .showcase .btn-str:hover {
     background: #fff;
     color: var(--general-color);
+}
+
+.showcase .previous,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+.showcase .previous:hover,
+.showcase .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--general-color);
+}
+
+.showcase .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .showcase .dotted {
@@ -1179,11 +1164,11 @@ hr {
 
 /* Media Queries () */
 @media (max-width: 816px) {
-    .showcase .slider-container .text h1 {
+    .showcase .slides .text h1 {
         font-size: 1.2em;
     }
 
-    .showcase .slider-container .text p {
+    .showcase .slides .text p {
         font-size: 22px;
     }
 
@@ -1241,7 +1226,7 @@ hr {
         width: 100%;
     }
 
-    .showcase .slider-container img {
+    .showcase .slides img {
         width: 100%;
         object-fit: cover;
     }
