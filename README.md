@@ -7,12 +7,12 @@
 ![eBusiness](https://user-images.githubusercontent.com/104528241/183266500-23e8e5c6-ae35-44ec-8776-3f2f0f6476b2.PNG)
 
 # features
-* Full Responsive
+* full Responsive
 * CSS-transition
 * animations
 * bootstrap_icons
 
 
 # Would you like to help and support me?
-* Star Github repository
-* ...
+* Star and follow my Github repository
+...
