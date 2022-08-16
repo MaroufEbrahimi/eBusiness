@@ -488,6 +488,11 @@ hr {
 
 .special-team .box img {
     width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.special-team .box:hover img {
+    filter: brightness(40%);
 }
 
 .special-team .box:hover .image>a:after {
@@ -495,7 +500,7 @@ hr {
 }
 
 .special-team .box:hover .social-media {
-    top: 45%;
+    top: 42%;
     opacity: 1;
 }
 
