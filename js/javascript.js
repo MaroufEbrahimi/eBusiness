@@ -16,15 +16,15 @@ function slideShow(n) {
     var a;
     var slides = document.getElementsByClassName('slides');
     var dots = document.getElementsByClassName('dot');
-    if(n > slides.length) {
+    if (n > slides.length) {
         index = 1;
-    }else if (n < 1) {
+    } else if (n < 1) {
         index = slides.length;
     }
-    for(a=0; a < slides.length; a++) {
+    for (a = 0; a < slides.length; a++) {
         slides[a].style.display = "none";
     }
-    for(a = 0; a < dots.length; a++) {
+    for (a = 0; a < dots.length; a++) {
         dots[a].className = dots[a].className.replace(" active", "");
     }
     slides[index - 1].style.display = "block";
@@ -46,15 +46,15 @@ function closeSlideMenu() {
     var goUp = document.getElementById('up-arrow');
 
     function setGoUpBtnVisibality() {
-        if(window.scrollY <= 150){
+        if (window.scrollY <= 150) {
             goUp.fadeOut();
-        }else {
+        } else {
             goUp.fadeIn();
         }
     }
 
     window.addEventListener('scroll', setGoUpBtnVisibality);
-    goUp.addEventListener('click', function(){
+    goUp.addEventListener('click', function () {
         this.scrollTo(0, 0);
     });
 }());
@@ -63,7 +63,7 @@ function closeSlideMenu() {
 function myFadeIn(ele) {
     var elementOpa = Number(getComputedStyle(ele).opacity).toPrecision(2);
     ele.style.opacity = elementOpa;
-    if(elementOpa >= 1) {
+    if (elementOpa >= 1) {
         return;
     }
 
@@ -76,7 +76,7 @@ function myFadeIn(ele) {
 function myFadeOut(ele) {
     var elementOpa = Number(getComputedStyle(ele).opacity).toPrecision(2);
 
-    if(elementOpa <= 0){
+    if (elementOpa <= 0) {
         return;
     }
 
@@ -86,10 +86,65 @@ function myFadeOut(ele) {
     }, 10);
 }
 
-Element.prototype.fadeIn = function() {
+Element.prototype.fadeIn = function () {
     myFadeIn(this);
 }
-Element.prototype.fadeOut = function() {
+Element.prototype.fadeOut = function () {
     myFadeOut(this);
 }
 // End of Up arrow
+
+
+
+// Tribute Section
+var tir_btn1 = document.getElementById('tri_btn1')
+var tir_btn2 = document.getElementById('tri_btn2')
+var tir_btn3 = document.getElementById('tri_btn3')
+var tir_btn4 = document.getElementById('tri_btn4')
+var tir_btn5 = document.getElementById('tri_btn5')
+var tri_slider = document.querySelector('.tri_slider')
+
+tir_btn1.onclick = function () {
+    this.style.background = '#3EC1D5';
+    tir_btn2.style.background = '#ddd';
+    tir_btn3.style.background = '#ddd';
+    tir_btn4.style.background = '#ddd';
+    tir_btn5.style.background = '#ddd';
+    tri_slider.style.marginLeft = '0px';
+}
+
+tir_btn2.onclick = function () {
+    this.style.background = '#3EC1D5';
+    tir_btn1.style.background = '#ddd';
+    tir_btn3.style.background = '#ddd';
+    tir_btn4.style.background = '#ddd';
+    tir_btn5.style.background = '#ddd';
+    tri_slider.style.marginLeft = '-1130px';
+}
+
+tir_btn3.onclick = function () {
+    this.style.background = '#3EC1D5';
+    tir_btn1.style.background = '#ddd';
+    tir_btn2.style.background = '#ddd';
+    tir_btn4.style.background = '#ddd';
+    tir_btn5.style.background = '#ddd';
+    tri_slider.style.marginLeft = '-2240px';
+}
+
+tir_btn4.onclick = function () {
+    this.style.background = '#3EC1D5';
+    tir_btn1.style.background = '#ddd';
+    tir_btn2.style.background = '#ddd';
+    tir_btn3.style.background = '#ddd';
+    tir_btn5.style.background = '#ddd';
+    tri_slider.style.marginLeft = '-3360px';
+}
+
+tir_btn5.onclick = function () {
+    this.style.background = '#3EC1D5';
+    tir_btn1.style.background = '#ddd';
+    tir_btn2.style.background = '#ddd';
+    tir_btn3.style.background = '#ddd';
+    tir_btn4.style.background = '#ddd';
+    tri_slider.style.marginLeft = '-4485px';
+}
