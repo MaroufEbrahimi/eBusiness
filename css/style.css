@@ -848,9 +848,69 @@ hr {
 
 /* Tribute Section */
 .tribute {
-    padding: 120px 0;
     background: url("../img/background/slider-bg.jpg") no-repeat center center / cover;
     position: relative;
+}
+
+.tribute>.tri {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.inner_container {
+    width: 500%;
+    height: auto;
+    overflow: hidden;
+}
+
+.tri_slider {
+    text-align: center;
+    width: 100%;
+    margin-top: 70px;
+    color: #fff;
+    line-height: 2em;
+    display: inline-flex;
+    transition: all 1s;
+}
+
+.tri_box {
+    margin: auto 60px;
+}
+
+.tri_box img {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+}
+
+.tri_box h2 {
+    font-weight: 200;
+}
+
+.tri_box p {
+    font-weight: 100;
+}
+
+.tri_btns {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 20px;
+}
+
+.tri_btns button {
+    width: 13px;
+    height: 13px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    margin: 0 2px;
+    background: #ddd;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.tri_btns button:nth-child(1) {
+    background: var(--general-color);
 }
 
 /* Latest News */
