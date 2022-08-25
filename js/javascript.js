@@ -1,4 +1,16 @@
 
+// Header link
+const link = document.querySelectorAll('.link');
+function activeLink() {
+    link.forEach((ele) => {
+        ele.classList.remove('active');
+    });
+    this.classList.add('active');
+}
+link.forEach((ele) => {
+    ele.addEventListener('click', activeLink)
+});
+
 
 // Script for slider
 var index = 1;
