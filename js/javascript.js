@@ -106,7 +106,68 @@ Element.prototype.fadeOut = function () {
 }
 // End of Up arrow
 
+// our portfolio
+var all_btn = document.getElementById('all_btn');
+var app_btn = document.getElementById('app_btn');
+var card_btn = document.getElementById('card_btn');
+var web_btn = document.getElementById('web_btn');
+var ele = document.getElementsByClassName('single-img');
 
+all_btn.onclick = function () {
+    for (a in ele) {
+        ele[a].style.display = 'grid';
+        all_btn.style.backgroundColor = '#3EC1D5';
+        all_btn.style.borderColor = '#3EC1D5';
+        app_btn.style.backgroundColor = 'transparent';
+        card_btn.style.backgroundColor = 'transparent';
+        web_btn.style.backgroundColor = 'transparent';
+    }
+}
+
+app_btn.onclick = function () {
+    for (var a in ele) {
+        if (ele[a].className == 'single-img porapp') {
+            ele[a].style.display = 'grid';
+            app_btn.style.backgroundColor = '#3EC1D5';
+            app_btn.style.borderColor = '#3EC1D5';
+            all_btn.style.backgroundColor = 'transparent';
+            card_btn.style.backgroundColor = 'transparent';
+            web_btn.style.backgroundColor = 'transparent';
+        } else {
+            ele[a].style.display = 'none';
+        }
+    }
+}
+
+card_btn.onclick = function () {
+    for (a in ele) {
+        if (ele[a].className == 'single-img procard') {
+            ele[a].style.display = 'grid';
+            card_btn.style.backgroundColor = '#3EC1D5';
+            card_btn.style.borderColor = '#3EC1D5';
+            all_btn.style.backgroundColor = 'transparent';
+            app_btn.style.backgroundColor = 'transparent';
+            web_btn.style.backgroundColor = 'transparent';
+        } else {
+            ele[a].style.display = 'none';
+        }
+    }
+}
+
+web_btn.onclick = function () {
+    for (a in ele) {
+        if (ele[a].className == 'single-img proweb') {
+            ele[a].style.display = 'grid';
+            web_btn.style.backgroundColor = '#3EC1D5';
+            web_btn.style.borderColor = '#3EC1D5';
+            all_btn.style.backgroundColor = 'transparent';
+            card_btn.style.backgroundColor = 'transparent';
+            app_btn.style.backgroundColor = 'transparent';
+        } else {
+            ele[a].style.display = 'none';
+        }
+    }
+}
 
 // Tribute Section
 var tir_btn1 = document.getElementById('tri_btn1')
