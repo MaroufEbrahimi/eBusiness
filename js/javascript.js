@@ -169,6 +169,57 @@ web_btn.onclick = function () {
     }
 }
 
+// Photo Gallery
+let gallery_model = document.getElementById('gallery_model');
+let closeBtn = document.getElementById('close');
+let model = document.getElementById('img01');
+
+let por_text1 = document.getElementById('por_text1');
+let por_img1 = document.getElementById('por_img1');
+por_text1.onclick = function () {
+    gallery_model.style.display = 'block';
+    model.src = por_img1.src;
+}
+
+let por_text2 = document.getElementById('por_text2');
+let por_img2 = document.getElementById('por_img2');
+por_text2.onclick = function () {
+    gallery_model.style.display = 'block';
+    model.src = por_img2.src;
+}
+
+let por_text3 = document.getElementById('por_text3');
+let por_img3 = document.getElementById('por_img3');
+por_text3.onclick = function () {
+    gallery_model.style.display = 'block';
+    model.src = por_img3.src;
+}
+
+let por_text4 = document.getElementById('por_text4');
+let por_img4 = document.getElementById('por_img4');
+por_text4.onclick = function () {
+    gallery_model.style.display = 'block';
+    model.src = por_img4.src;
+}
+
+let por_text5 = document.getElementById('por_text5');
+let por_img5 = document.getElementById('por_img5');
+por_text5.onclick = function () {
+    gallery_model.style.display = 'block';
+    model.src = por_img5.src;
+}
+
+let por_text6 = document.getElementById('por_text6');
+let por_img6 = document.getElementById('por_img6');
+por_text6.onclick = function () {
+    gallery_model.style.display = 'block';
+    model.src = por_img6.src;
+}
+
+closeBtn.onclick = function () {
+    gallery_model.style.display = 'none';
+}
+
 // Tribute Section
 var tir_btn1 = document.getElementById('tri_btn1')
 var tir_btn2 = document.getElementById('tri_btn2')
