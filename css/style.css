@@ -665,6 +665,7 @@ hr {
 
 .portfolio .single-img:hover .pro_text {
     background: rgba(0, 0, 0, .8);
+    cursor: pointer;
 }
 
 .pro_text h2 {
@@ -701,6 +702,49 @@ hr {
 .pro_text:hover span {
     opacity: 1;
     top: 54%;
+}
+
+#gallery_model {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    padding-top: 30px;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all .3s;
+}
+
+#gallery_model #img01 {
+    animation: zoom .7s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+#gallery_model span {
+    position: absolute;
+    font-size: 50px;
+    color: #ffffffb3;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    transition: .3s;
+}
+
+#gallery_model span:hover {
+    color: #ccc;
 }
 
 /* End of Our Portfolio */
@@ -1211,6 +1255,17 @@ hr {
 
     .end-about .box {
         width: 100%;
+    }
+
+    #gallery_model {
+        overflow: hidden;
+    }
+
+    #gallery_model #img01 {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
     }
 }
 
