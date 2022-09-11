@@ -1326,6 +1326,13 @@ hr {
     .open-slide {
         display: none;
     }
+
+    #gallery_model #img01 {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+        padding-top: 50px;
+    }
 }
 
 /* Media Queries () */
