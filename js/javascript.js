@@ -1,4 +1,20 @@
 
+// Loading animation
+const loader = document.querySelector('.loader');
+const main = document.querySelector('.main');
+function loadingAnimation() {
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+
+        main.style.display = 'block';
+        setTimeout(() => {
+            main.style.opacity = 1;
+        }, 20);
+    }, 1300);
+}
+loadingAnimation();
+
 // Header link
 const link = document.querySelectorAll('.link');
 function activeLink() {
