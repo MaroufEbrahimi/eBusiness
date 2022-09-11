@@ -63,6 +63,49 @@ a:hover {
     text-decoration: none;
 }
 
+/* Loading animation */
+.main {
+    opacity: 0;
+    display: none;
+    transition: opacity .5s ease-in;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.loader>span {
+    display: inline-block;
+    background-color: var(--general-color);
+    width: 0;
+    height: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    animation: loader .5s infinite alternate;
+    transform: translate3d(0);
+}
+
+.loader>span:nth-child(2) {
+    background: #2b5960;
+    animation-delay: .2s;
+}
+
+.loader>span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+@keyframes loader {
+    to {
+        width: 16px;
+        height: 16px;
+        transform: translate3d(0, -2px, 0);
+    }
+}
+
 /* Header */
 header {
     position: fixed;
