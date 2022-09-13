@@ -109,10 +109,16 @@ a:hover {
 /* Header */
 header {
     position: fixed;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
     width: 100%;
     z-index: 2;
+    transition: all .5s;
+}
+
+.header_sticky {
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Header logo */
