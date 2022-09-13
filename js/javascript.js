@@ -15,6 +15,12 @@ function loadingAnimation() {
 }
 loadingAnimation();
 
+// Header Scrollable
+const header_scroll = document.querySelector('header');
+window.addEventListener('scroll', function () {
+    header_scroll.classList.toggle('header_sticky', this.window.scrollY > 0);
+})
+
 // Header link
 const link = document.querySelectorAll('.link');
 function activeLink() {
