@@ -16,11 +16,11 @@ body {
 
 /* Scroll bar */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #ddd;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -289,6 +289,7 @@ header .nav-bar ul li .active {
     width: 100%;
     height: 100vh;
     filter: brightness(40%);
+    object-fit: cover;
 }
 
 .showcase .previous,
@@ -300,7 +301,7 @@ header .nav-bar ul li .active {
     margin-top: -22px;
     color: #ccc;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -629,7 +630,7 @@ hr {
 
 .end-about .text {
     background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
-    padding: 77px;
+    padding: 50px;
     width: 50%;
     text-align: left;
 }
@@ -639,10 +640,10 @@ hr {
 }
 
 .end-about .text p {
-    padding: 7% 0;
-    font-size: 18px;
+    padding: 10px 0;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 30px;
 }
 
 .end-about .text .btn {
@@ -650,9 +651,9 @@ hr {
     border-radius: 30px;
     color: #fff;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 13px 40px;
+    padding: 13px 30px;
     text-align: center;
     transition: all 0.4s ease 0s;
 }
@@ -673,7 +674,7 @@ hr {
 .portfolio .links {
     text-align: center;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 2px;
 }
 
 .portfolio .links ul li {
@@ -684,7 +685,7 @@ hr {
     font-size: 12px;
     line-height: 20px;
     padding: 8px 24px;
-    margin: 15px 15px 15px 0;
+    margin: 5px;
     text-align: center;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -1343,6 +1344,10 @@ hr {
 
 /* Media Queries () */
 @media (max-width: 816px) {
+    .container {
+        max-width: 530px;
+    }
+
     .showcase .slider-container .text h1 {
         font-size: 1.2em;
     }
@@ -1353,10 +1358,6 @@ hr {
 
     .showcase .btn-str {
         font-size: 14px;
-    }
-
-    .container {
-        max-width: 530px;
     }
 
     .special-team .box {
@@ -1390,14 +1391,19 @@ hr {
 
 /* Media Queries () */
 @media (max-width: 575px) {
+    .container {
+        max-width: 430px;
+    }
 
-    .about .box,
+    .about .box,    
     .services .box,
     .special-team .box,
-    .pricing .box,
     .latest-news .box {
         float: none;
-        width: 100%;
+        width: 95%;
+    }
+    .pricing .box {
+        width: 400px;
     }
 
     .showcase .slider-container img {
@@ -1412,4 +1418,15 @@ hr {
     .special-team .box .text {
         font-size: 16px;
     }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .pricing .box {
+        width: 270px;
+    }
+
 }
