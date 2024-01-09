@@ -1,600 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>eBusiness Famous Site</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Loading animation -->
-    <div class="loader">
-        <span></span><span></span><span></span>
-    </div>
+    <div class="loader"><span></span><span></span><span></span></div>
     <section class="main">
-        <!-- Header -->
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <h1><a href="#"><span>e</span>Business</a></h1>
-                </div>
-                <span class="open-slide">
-                    <a href="#" onclick="openSlideMenu()">
-                        <svg id="svg" width='30' height='30'>
-                            <path d="M0,5 30,5" stroke='#fff' stroke-width='3' />
-                            <path d="M0,14 30,14" stroke='#fff' stroke-width='3' />
-                            <path d="M0,23 30,23" stroke='#fff' stroke-width='3' />
-                        </svg>
-                    </a>
-                </span>
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a class="link active" href="#">Home</a></li>
-                        <li><a class="link" href="#about">About</a></li>
-                        <li><a class="link" href="#services">Services</a></li>
-                        <li><a class="link" href="#portfolio">Portfolio</a></li>
-                        <li><a class="link" href="#team">Team</a></li>
-                        <li class="dropdown"><a class="link" href="#"><span>Drop Down</span> <i
-                                    class="bi bi-chevron-down" style="font-size: 13px;"></i></a>
-                            <ul>
-                                <li><a class="link" href="#">Drop Down 1</a></li>
-                                <li><a class="link" href="#">Drop Down 2</a></li>
-                                <li><a class="link" href="#">Drop Down 3</a></li>
-                                <li><a class="link" href="#">Drop Down 4</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="link" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div id="side-menu" class="side-nav">
-                    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-                    <a href="#" onclick="closeSlideMenu()">Home</a>
-                    <a href="#about" onclick="closeSlideMenu()">About</a>
-                    <a href="#services" onclick="closeSlideMenu()">Services</a>
-                    <a href="#portfolio" onclick="closeSlideMenu()">Portfolio</a>
-                    <a href="#team" onclick="closeSlideMenu()">Team</a>
-                    <a href="#contact" onclick="closeSlideMenu()">Contact</a>
-                </div>
-            </div>
-        </header><!-- End of Header -->
-
-        <!-- Showcase -->
-        <section class="showcase">
-            <div class="showcase-other">
-                <div class="slider-container">
-                    <div class="slides fade">
-                        <img src="./img/showcase/1.jpg" alt="banner">
-                        <div class="text">
-                            <h1>The Best Business Information</h1>
-                            <p>We're In The Business Of Helping You Start Your Business</p>
-                            <a href="#about" class="btn-str">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="slides fade">
-                        <img src="./img/showcase/2.jpg" alt="banner">
-                        <div class="text">
-                            <h1>At vero eos et accusamus</h1>
-                            <p>Helping Business Security & Peace of Mind for Your Family</p>
-                            <a href="#about" class="btn-str">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="slides fade">
-                        <img src="./img/showcase/3.jpg" alt="banner">
-                        <div class="text">
-                            <h1>Temporibus autem quibusdam</h1>
-                            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
-                            <a href="#about" class="btn-str">Get Started</a>
-                        </div>
-                    </div>
-                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div><br>
-                <div class="dotted">
-                    <span class="dot" onclick="slide(1)"></span>
-                    <span class="dot" onclick="slide(2)"></span>
-                    <span class="dot" onclick="slide(3)"></span>
-                </div>
-            </div>
-        </section><!-- End of showcase-->
-
-        <!-- About EBusiness -->
-        <section class="about" id="about">
-            <div class="container">
-                <h1>About EBusiness</h1>
-                <hr>
-                <div class="box">
-                    <a href="#"><img src="./img/about/1.jpg" alt="about-1"></a>
-                </div>
-                <div class="pro-maintenance box">
-                    <a href="#">project maintenance</a>
-                    <p>Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur
-                        sit
-                        adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque
-                        quas
-                        officiis iure</p>
-                    <ul>
-                        <li><i class="bi bi-check"></i> Interior design Package</li>
-                        <li><i class="bi bi-check"></i> Building House</li>
-                        <li><i class="bi bi-check"></i> Reparing of Residentail Roof</li>
-                        <li><i class="bi bi-check"></i> Renovaion of Commercial Office</li>
-                        <li><i class="bi bi-check"></i> Make Quality Products</li>
-                    </ul>
-                </div>
-            </div>
-        </section><!-- End of About -->
-
-        <!-- Services -->
-        <section class="services" id="services">
-            <div class="container">
-                <h1>Our Services</h1>
-                <hr>
-                <div class="box">
-                    <a href="#"><i class="bi bi-briefcase"></i></i></a>
-                    <h2>Expert Coder</h2>
-                    <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the
-                        prototype looks finished by.</p>
-                </div>
-                <div class="box">
-                    <a href="#"><i class="bi bi-card-checklist"></i></a>
-                    <h2>Creative Designer</h2>
-                    <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the
-                        prototype looks finished by.</p>
-                </div>
-                <div class="box">
-                    <a href="#"><i class="bi bi-bar-chart"></i></a>
-                    <h2>Wordpress Developer</h2>
-                    <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the
-                        prototype looks finished by.</p>
-                </div>
-                <div class="box">
-                    <a href="#"><i class="bi bi-binoculars"></i></a>
-                    <h2>Social Marketer</h2>
-                    <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the
-                        prototype looks finished by.</p>
-                </div>
-                <div class="box">
-                    <a href="#"><i class="bi bi-brightness-high"></i></a>
-                    <h2>Seo Expart</h2>
-                    <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the
-                        prototype looks finished by.</p>
-                </div>
-                <div class="box">
-                    <a href="#"><i class="bi bi-calendar4-week"></i></a>
-                    <h2>24/7 Support</h2>
-                    <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the
-                        prototype looks finished by.</p>
-                </div>
-            </div>
-        </section><!-- End of Services -->
-
-        <!-- Special Team -->
-        <section class="special-team" id="team">
-            <div class="container">
-                <h1>Our Special Team</h1>
-                <hr>
-                <div class="box">
-                    <a href="#"><img src="./img/team/1.jpg" alt="Team"></a>
-                    <div class="social-media">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <h2>Marouf Ebrahimi</h2>
-                        <p>Web Developer</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="#"><img src="./img/team/2.jpg" alt="Team"></a>
-                    <div class="social-media">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <h2>Ali Herawi</h2>
-                        <p>Web Developer</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="#"><img src="./img/team/3.jpg" alt="Team"></a>
-                    <div class="social-media">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <h2>Miss Noori</h2>
-                        <p>Seo</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="#"><img src="./img/team/4.jpg" alt="Team"></a>
-                    <div class="social-media">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <h2>Mr Dyan</h2>
-                        <p>Seo Expot</p>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End of Special Team -->
-
-        <!-- End of About -->
-        <section class="end-about">
-            <div class="box">
-                <img src="./img/about/2.jpg" alt="End about">
-            </div>
-            <div class="box text">
-                <h2>working with us</h2>
-                <p>web design, ready home, construction and co-operate outstanding buildings.</p>
-                <a href="#contact" class="btn">contact us</a>
-            </div>
-        </section><!-- End of end about -->
-
-        <!-- Our Portfolio -->
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h1>Our Portfolio</h1>
-                <hr>
-                <div class="links">
-                    <ul id="pro-links">
-                        <li id="all_btn" class="filter-active">All</li>
-                        <li id="app_btn">App</li>
-                        <li id="card_btn">Card</li>
-                        <li id="web_btn">Web</li>
-                    </ul>
-                </div>
-                <div class="portfolio_images">
-                    <div class="single-img porapp">
-                        <img id="por_img1" src="./img/portfolio/1.jpg" alt="">
-                        <div id="por_text1" class="pro_text">
-                            <h2>Business City</h2>
-                            <span>Web Development</span>
-                        </div>
-                    </div>
-
-                    <div class="single-img porapp">
-                        <img id="por_img2" src="./img/portfolio/2.jpg" alt="">
-                        <div id="por_text2" class="pro_text">
-                            <h2>Blue Sea</h2>
-                            <span>Photosho</span>
-                        </div>
-                    </div>
-
-                    <div class="single-img procard">
-                        <img id="por_img3" src="./img/portfolio/3.jpg" alt="">
-                        <div id="por_text3" class="pro_text">
-                            <h2>Beautiful Nature</h2>
-                            <span>Web Design</span>
-                        </div>
-                    </div>
-
-                    <div class="single-img procard">
-                        <img id="por_img4" src="./img/portfolio/4.jpg" alt="">
-                        <div id="por_text4" class="pro_text">
-                            <h2>Creative Team</h2>
-                            <span>Web desing</span>
-                        </div>
-                    </div>
-
-                    <div class="single-img proweb">
-                        <img id="por_img5" src="./img/portfolio/5.jpg" alt="">
-                        <div id="por_text5" class="pro_text">
-                            <h2>Beautiful Flower</h2>
-                            <span>Web Development</span>
-                        </div>
-                    </div>
-
-                    <div class="single-img proweb">
-                        <img id="por_img6" src="./img/portfolio/6.jpg" alt="">
-                        <div id="por_text6" class="pro_text">
-                            <h2>Night Hill</h2>
-                            <span>Photoshop</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Photo Gallery -->
-            <div id="gallery_model">
-                <span id="close"><i class="bi bi-x"></i></span>
-                <img src="" id="img01">
-            </div>
-        </section><!-- End of Our Portfolio -->
-
-        <!-- Pricing Table -->
-        <section class="pricing">
-            <div class="container">
-                <h1>Pricing Table</h1>
-                <hr>
-                <div class="box">
-                    <div class="box-header">
-                        <h2>basic</h2>
-                        <span>$80 / month</span>
-                    </div>
-                    <div class="box-content">
-                        <ul>
-                            <li><i class="bi bi-check"></i> Online system</li>
-                            <li><i class="bi bi-x"></i> Full access</li>
-                            <li><i class="bi bi-check"></i> Free apps</li>
-                            <li><i class="bi bi-check"></i> Multiple slider</li>
-                            <li class="del"><i class="bi bi-x"></i> <del>Free domin</del></li>
-                            <li class="del"><i class="bi bi-x"></i> <del>Support unlimited</del></li>
-                            <li><i class="bi bi-check"></i> Payment online</li>
-                            <li><i class="bi bi-x"></i> Cash back</li>
-                        </ul>
-                    </div>
-                    <button class="btn">sign up now</button>
-                </div>
-                <div class="box">
-                    <div class="box-header box-center">
-                        <span>top sale</span>
-                        <h2>standard</h2>
-                        <p>$110 / month</p>
-                    </div>
-                    <div class="box-content">
-                        <ul>
-                            <li><i class="bi bi-check"></i> Online system</li>
-                            <li><i class="bi bi-check"></i> Full access</li>
-                            <li><i class="bi bi-check"></i> Free apps</li>
-                            <li><i class="bi bi-check"></i> Multiple slider</li>
-                            <li class="del"><i class="bi bi-x"></i> <del>Free domin</del></li>
-                            <li><i class="bi bi-check"></i> Support unlimited</li>
-                            <li><i class="bi bi-check"></i> Payment online</li>
-                            <li class="del"><i class="bi bi-x"></i> <del>Cash back</del></li>
-                        </ul>
-                    </div>
-                    <button class="btn active-pri">sign up now</button>
-                </div>
-                <div class="box">
-                    <div class="box-header">
-                        <h2>premium</h2>
-                        <p>$150 / month</p>
-                    </div>
-                    <div class="box-content">
-                        <ul>
-                            <li><i class="bi bi-check"></i> Online system</li>
-                            <li><i class="bi bi-check"></i> Full access</li>
-                            <li><i class="bi bi-check"></i> Free apps</li>
-                            <li><i class="bi bi-check"></i> Multiple slider</li>
-                            <li><i class="bi bi-check"></i> Free domin</li>
-                            <li><i class="bi bi-check"></i> Support unlimited</li>
-                            <li><i class="bi bi-check"></i> Payment online</li>
-                            <li><i class="bi bi-check"></i> Cash back</li>
-                        </ul>
-                    </div>
-                    <button class="btn">sign up now</button>
-                </div>
-            </div>
-        </section><!-- End of Pricing Table -->
-
-        <!-- Tribute Section -->
-        <section class="tribute">
-            <div class="tri">
-                <div class="container tri">
-                    <div class="inner_container">
-                        <div class="tri_slider">
-                            <div class="tri_box">
-                                <img src="./img/testimonials/testimonials-5.jpg" alt="tribute slider img">
-                                <h2>Marouf Famous</h2>
-                                <p>Designer</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo assumenda
-                                    repellat
-                                    quod
-                                    vitae quae recusandae minima maxime animi provident assumenda.</p>
-                            </div>
-                            <div class="tri_box">
-                                <img src="./img/testimonials/testimonials-2.jpg" alt="tribute slider img">
-                                <h2>Zarah Ahmadi</h2>
-                                <p>Ceo & Founder</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo assumenda
-                                    repellat
-                                    quod
-                                    vitae quae recusandae minima maxime animi provident assumenda.</p>
-                            </div>
-                            <div class="tri_box">
-                                <img src="./img/testimonials/testimonials-3.jpg" alt="tribute slider img">
-                                <h2>Mariem Monir</h2>
-                                <p>Store Owner</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo assumenda
-                                    repellat
-                                    quod
-                                    vitae quae recusandae minima maxime animi provident assumenda.</p>
-                            </div>
-                            <div class="tri_box">
-                                <img src="./img/testimonials/testimonials-4.jpg" alt="tribute slider img">
-                                <h2>Ali Hariwi</h2>
-                                <p>Full Stack</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo assumenda
-                                    repellat
-                                    quod
-                                    vitae quae recusandae minima maxime animi provident assumenda.</p>
-                            </div>
-                            <div class="tri_box">
-                                <img src="./img/testimonials/testimonials-1.jpg" alt="tribute slider img">
-                                <h2>Dayan</h2>
-                                <p>Seo</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo assumenda
-                                    repellat
-                                    quod
-                                    vitae quae recusandae minima maxime animi provident assumenda.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tri_btns">
-                        <button id="tri_btn1"></button>
-                        <button id="tri_btn2"></button>
-                        <button id="tri_btn3"></button>
-                        <button id="tri_btn4"></button>
-                        <button id="tri_btn5"></button>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End of Tribute Section -->
-
-        <!-- Latest News Section -->
-        <section class="latest-news">
-            <div class="container">
-                <h1>Latest News</h1>
-                <hr>
-                <div class="box">
-                    <div class="image">
-                        <a href="#"><img src="./img/blog/1.jpg" alt=""></a>
-                    </div>
-                    <div class="text">
-                        <a href="#">Assumenda repud eum veniam</a>
-                        <p>Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit
-                            explicabo
-                            nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit
-                            explicabo nisi magnam quibusdam.</p>
-                        <a href="#" class="btn">read more</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image">
-                        <a href="#"><img src="./img/blog/2.jpg" alt=""></a>
-                    </div>
-                    <div class="text">
-                        <a href="#">Explicabo magnam quibusdam.</a>
-                        <p>Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit
-                            explicabo
-                            nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit
-                            explicabo nisi magnam quibusdam.</p>
-                        <a href="#" class="btn">read more</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image">
-                        <a href="#"><img src="./img/blog/3.jpg" alt=""></a>
-                    </div>
-                    <div class="text">
-                        <a href="#">Lorem ipsum dolor sit amet</a>
-                        <p>Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit
-                            explicabo
-                            nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit
-                            explicabo nisi magnam quibusdam.</p>
-                        <a href="#" class="btn">read more</a>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End of Latest News Section -->
-
-        <!-- EBusiness Company -->
-        <section class="wel-company">
-            <div class="container">
-                <div class="text">
-                    <h3>welcome to our ebusiness company</h3>
-                    <a href="#" class="btn">get a quote</a>
-                </div>
-            </div>
-        </section><!-- End of EBusiness Company -->
-
-        <!-- Contact Us -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <hr>
-                <div class="icon">
-                    <i class="bi bi-phone"></i>
-                    <p>
-                        Call: (0093) 795400371<br>
-                        <span>Saturday-Thursday (8am-5pm)</span>
-                    </p>
-                </div>
-                <div class="icon">
-                    <i class="bi bi-envelope"></i>
-                    <p>
-                        Email: Famous@gmail.com<br>
-                        <span>Web: www.famous.com</span>
-                    </p>
-                </div>
-                <div class="icon">
-                    <i class="bi bi-geo-alt"></i>
-                    <p>
-                        Location: Sherzy Street<br>
-                        <span>NY 454545, AF</span>
-                    </p>
-                </div>
-                <div class="box iframe">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
-                        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="box">
-                    <form>
-                        <input type="text" name="firstname" placeholder="Your Name"><br>
-                        <input type="email" name="email" placeholder="Your Email"><br>
-                        <input type="text" name="subject" placeholder="Subject"><br>
-                        <textarea cols="30" rows="7" placeholder="Message"></textarea><br>
-                        <button type="submit">send message</button>
-                    </form>
-                </div>
-            </div>
-        </section><!-- End of Contact Us -->
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="box">
-                    <h1><span>e</span>Business</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-                    <ul>
-                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <h4>INFORMATION</h4>
-                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</P>
-                    <h5><span>Tel:</span> +123 456 789</h5>
-                    <h5><span>Email:</span> famous@gmail.com</h5>
-                    <h5><span>Working Hours:</span> 8am-5pm</h5>
-                </div>
-                <div class="box">
-                    <h4>INSTAGRAM</h4>
-                    <a href="#"><img src="./img/portfolio/1.jpg" alt=""></a>
-                    <a href="#"><img src="./img/portfolio/2.jpg" alt=""></a>
-                    <a href="#"><img src="./img/portfolio/3.jpg" alt=""></a>
-                    <a href="#"><img src="./img/portfolio/4.jpg" alt=""></a>
-                    <a href="#"><img src="./img/portfolio/5.jpg" alt=""></a>
-                    <a href="#"><img src="./img/portfolio/6.jpg" alt=""></a>
-                </div>
-            </div>
-        </footer>
-        <div class="footer-bottom">
-            <p>
-                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
-            </p>
-            <h4>Desginer: Marouf Ebrahimi</h4>
-        </div><!-- End of Footer -->
-
-        <!-- Up arrow -->
-        <div id="up-arrow" onclick="scrollTo(0, 0)">
-            <a href="#"><i class="bi bi-arrow-up-short"></i></a>
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <h1>
+              <a href="#"><span>e</span>Business</a>
+            </h1>
+          </div>
+          <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg id="svg" width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="3" />
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="3" />
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="3" />
+              </svg>
+            </a>
+          </span>
+          <nav class="nav-bar">
+            <ul>
+              <li><a class="link active" href="#">Home</a></li>
+              <li><a class="link" href="#about">About</a></li>
+              <li><a class="link" href="#services">Services</a></li>
+              <li><a class="link" href="#portfolio">Portfolio</a></li>
+              <li><a class="link" href="#team">Team</a></li>
+              <li class="dropdown">
+                <a class="link" href="#"
+                  ><span>Drop Down</span>
+                  <i class="bi bi-chevron-down" style="font-size: 13px"></i
+                ></a>
+                <ul>
+                  <li><a class="link" href="#">Drop Down 1</a></li>
+                  <li><a class="link" href="#">Drop Down 2</a></li>
+                  <li><a class="link" href="#">Drop Down 3</a></li>
+                  <li><a class="link" href="#">Drop Down 4</a></li>
+                </ul>
+              </li>
+              <li><a class="link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#" onclick="closeSlideMenu()">Home</a>
+            <a href="#about" onclick="closeSlideMenu()">About</a>
+            <a href="#services" onclick="closeSlideMenu()">Services</a>
+            <a href="#portfolio" onclick="closeSlideMenu()">Portfolio</a>
+            <a href="#team" onclick="closeSlideMenu()">Team</a>
+            <a href="#contact" onclick="closeSlideMenu()">Contact</a>
+          </div>
         </div>
-    </section>
+      </header>
+      <!-- End of Header -->
 
+      <!-- Showcase -->
+      <section class="showcase">
+        <div class="showcase-other">
+          <div class="slider-container">
+            <div class="slides fade">
+              <img src="./img/showcase/1.jpg" alt="banner" />
+              <div class="text">
+                <h1>The Best Business Information</h1>
+                <p>We're In The Business Of Helping You Start Your Business</p>
+                <a href="#about" class="btn-str">Get Started</a>
+              </div>
+            </div>
+            <div class="slides fade">
+              <img src="./img/showcase/2.jpg" alt="banner" />
+              <div class="text">
+                <h1>At vero eos et accusamus</h1>
+                <p>Helping Business Security & Peace of Mind for Your Family</p>
+                <a href="#about" class="btn-str">Get Started</a>
+              </div>
+            </div>
+            <div class="slides fade">
+              <img src="./img/showcase/3.jpg" alt="banner" />
+              <div class="text">
+                <h1>Temporibus autem quibusdam</h1>
+                <p>
+                  Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                </p>
+                <a href="#about" class="btn-str">Get Started</a>
+              </div>
+            </div>
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <div class="dotted">
+            <span class="dot" onclick="slide(1)"></span>
+            <span class="dot" onclick="slide(2)"></span>
+            <span class="dot" onclick="slide(3)"></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of showcase-->
+
+      <!-- About EBusiness -->
+      <section class="about" id="about">
+        <div class="container">
+          <h1>About EBusiness</h1>
+          <hr />
+          <div class="box">
+            <a href="#"><img src="./img/about/1.jpg" alt="about-1" /></a>
+          </div>
+          <div class="pro-maintenance box">
+            <a href="#">project maintenance</a>
+            <p>
+              Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque
+              quas officiis iure aspernatur sit adipisci quaerat unde at
+              nequeRedug Lagre dolor sit amet, consectetur adipisicing elit.
+              Itaque quas officiis iure
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Interior design Package</li>
+              <li><i class="bi bi-check"></i> Building House</li>
+              <li><i class="bi bi-check"></i> Reparing of Residentail Roof</li>
+              <li>
+                <i class="bi bi-check"></i> Renovaion of Commercial Office
+              </li>
+              <li><i class="bi bi-check"></i> Make Quality Products</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End of About -->
+
+      <!-- Services -->
+      <section class="services" id="services">
+        <div class="container">
+          <h1>Our Services</h1>
+          <hr />
+          <div class="box">
+            <a href="#"><i class="bi bi-briefcase"></i></a>
+            <h2>Expert Coder</h2>
+            <p>
+              will have to make sure the prototype looks finished by inserting
+              text or photo.make sure the prototype looks finished by.
+            </p>
+          </div>
+          <div class="box">
+            <a href="#"><i class="bi bi-card-checklist"></i></a>
+            <h2>Creative Designer</h2>
+            <p>
+              will have to make sure the prototype looks finished by inserting
+              text or photo.make sure the prototype looks finished by.
+            </p>
+          </div>
+          <div class="box">
+            <a href="#"><i class="bi bi-bar-chart"></i></a>
+            <h2>Wordpress Developer</h2>
+            <p>
+              will have to make sure the prototype looks finished by inserting
+              text or photo.make sure the prototype looks finished by.
+            </p>
+          </div>
+          <div class="box">
+            <a href="#"><i class="bi bi-binoculars"></i></a>
+            <h2>Social Marketer</h2>
+            <p>
+              will have to make sure the prototype looks finished by inserting
+              text or photo.make sure the prototype looks finished by.
+            </p>
+          </div>
+          <div class="box">
+            <a href="#"><i class="bi bi-brightness-high"></i></a>
+            <h2>Seo Expart</h2>
+            <p>
+              will have to make sure the prototype looks finished by inserting
+              text or photo.make sure the prototype looks finished by.
+            </p>
+          </div>
+          <div class="box">
+            <a href="#"><i class="bi bi-calendar4-week"></i></a>
+            <h2>24/7 Support</h2>
+            <p>
+              will have to make sure the prototype looks finished by inserting
+              text or photo.make sure the prototype looks finished by.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End of Services -->
+
+      <!-- Special Team -->
+      <section class="special-team" id="team">
+        <div class="container">
+          <h1>Our Special Team</h1>
+          <hr />
+          <div class="box">
+            <a href="#"><img src="./img/team/1.jpg" alt="Team" /></a>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="text">
+              <h2>Marouf Ebrahimi</h2>
+              <p>Web Developer</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="#"><img src="./img/team/2.jpg" alt="Team" /></a>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="text">
+              <h2>Ali Herawi</h2>
+              <p>Web Developer</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="#"><img src="./img/team/3.jpg" alt="Team" /></a>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="text">
+              <h2>Miss Noori</h2>
+              <p>Seo</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="#"><img src="./img/team/4.jpg" alt="Team" /></a>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="text">
+              <h2>Mr Dyan</h2>
+              <p>Seo Expot</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Special Team -->
+
+      <!-- End of About -->
+      <section class="end-about">
+        <div class="box">
+          <img src="./img/about/2.jpg" alt="End about" />
+        </div>
+        <div class="box text">
+          <h2>working with us</h2>
+          <p>
+            web design, ready home, construction and co-operate outstanding
+            buildings.
+          </p>
+          <a href="#contact" class="btn">contact us</a>
+        </div>
+      </section>
+      <!-- End of end about -->
+
+      <!-- Our Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h1>Our Portfolio</h1>
+          <hr />
+          <div class="links">
+            <ul id="pro-links">
+              <li id="all_btn" class="filter-active">All</li>
+              <li id="app_btn">App</li>
+              <li id="card_btn">Card</li>
+              <li id="web_btn">Web</li>
+            </ul>
+          </div>
+          <div class="portfolio_images">
+            <div class="single-img porapp">
+              <img id="por_img1" src="./img/portfolio/1.jpg" alt="" />
+              <div id="por_text1" class="pro_text">
+                <h2>Business City</h2>
+                <span>Web Development</span>
+              </div>
+            </div>
+
+            <div class="single-img porapp">
+              <img id="por_img2" src="./img/portfolio/2.jpg" alt="" />
+              <div id="por_text2" class="pro_text">
+                <h2>Blue Sea</h2>
+                <span>Photosho</span>
+              </div>
+            </div>
+
+            <div class="single-img procard">
+              <img id="por_img3" src="./img/portfolio/3.jpg" alt="" />
+              <div id="por_text3" class="pro_text">
+                <h2>Beautiful Nature</h2>
+                <span>Web Design</span>
+              </div>
+            </div>
+
+            <div class="single-img procard">
+              <img id="por_img4" src="./img/portfolio/4.jpg" alt="" />
+              <div id="por_text4" class="pro_text">
+                <h2>Creative Team</h2>
+                <span>Web desing</span>
+              </div>
+            </div>
+
+            <div class="single-img proweb">
+              <img id="por_img5" src="./img/portfolio/5.jpg" alt="" />
+              <div id="por_text5" class="pro_text">
+                <h2>Beautiful Flower</h2>
+                <span>Web Development</span>
+              </div>
+            </div>
+
+            <div class="single-img proweb">
+              <img id="por_img6" src="./img/portfolio/6.jpg" alt="" />
+              <div id="por_text6" class="pro_text">
+                <h2>Night Hill</h2>
+                <span>Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Photo Gallery -->
+        <div id="gallery_model">
+          <span id="close"><i class="bi bi-x"></i></span>
+          <img src="" id="img01" />
+        </div>
+      </section>
+      <!-- End of Our Portfolio -->
+
+      <!-- Pricing Table -->
+      <section class="pricing">
+        <div class="container">
+          <h1>Pricing Table</h1>
+          <hr />
+          <div class="box">
+            <div class="box-header">
+              <h2>basic</h2>
+              <span>$80 / month</span>
+            </div>
+            <div class="box-content">
+              <ul>
+                <li><i class="bi bi-check"></i> Online system</li>
+                <li><i class="bi bi-x"></i> Full access</li>
+                <li><i class="bi bi-check"></i> Free apps</li>
+                <li><i class="bi bi-check"></i> Multiple slider</li>
+                <li class="del">
+                  <i class="bi bi-x"></i> <del>Free domin</del>
+                </li>
+                <li class="del">
+                  <i class="bi bi-x"></i> <del>Support unlimited</del>
+                </li>
+                <li><i class="bi bi-check"></i> Payment online</li>
+                <li><i class="bi bi-x"></i> Cash back</li>
+              </ul>
+            </div>
+            <button class="btn">sign up now</button>
+          </div>
+          <div class="box">
+            <div class="box-header box-center">
+              <span>top sale</span>
+              <h2>standard</h2>
+              <p>$110 / month</p>
+            </div>
+            <div class="box-content">
+              <ul>
+                <li><i class="bi bi-check"></i> Online system</li>
+                <li><i class="bi bi-check"></i> Full access</li>
+                <li><i class="bi bi-check"></i> Free apps</li>
+                <li><i class="bi bi-check"></i> Multiple slider</li>
+                <li class="del">
+                  <i class="bi bi-x"></i> <del>Free domin</del>
+                </li>
+                <li><i class="bi bi-check"></i> Support unlimited</li>
+                <li><i class="bi bi-check"></i> Payment online</li>
+                <li class="del">
+                  <i class="bi bi-x"></i> <del>Cash back</del>
+                </li>
+              </ul>
+            </div>
+            <button class="btn active-pri">sign up now</button>
+          </div>
+          <div class="box">
+            <div class="box-header">
+              <h2>premium</h2>
+              <p>$150 / month</p>
+            </div>
+            <div class="box-content">
+              <ul>
+                <li><i class="bi bi-check"></i> Online system</li>
+                <li><i class="bi bi-check"></i> Full access</li>
+                <li><i class="bi bi-check"></i> Free apps</li>
+                <li><i class="bi bi-check"></i> Multiple slider</li>
+                <li><i class="bi bi-check"></i> Free domin</li>
+                <li><i class="bi bi-check"></i> Support unlimited</li>
+                <li><i class="bi bi-check"></i> Payment online</li>
+                <li><i class="bi bi-check"></i> Cash back</li>
+              </ul>
+            </div>
+            <button class="btn">sign up now</button>
+          </div>
+        </div>
+      </section>
+      <!-- End of Pricing Table -->
+
+      <!-- Tribute Section -->
+      <section class="tribute">
+        <div class="tri">
+          <div class="container tri">
+            <div class="inner_container">
+              <div class="tri_slider">
+                <div class="tri_box">
+                  <img
+                    src="./img/testimonials/testimonials-5.jpg"
+                    alt="tribute slider img"
+                  />
+                  <h2>Marouf Famous</h2>
+                  <p>Designer</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit nemo assumenda repellat quod vitae quae recusandae
+                    minima maxime animi provident assumenda.
+                  </p>
+                </div>
+                <div class="tri_box">
+                  <img
+                    src="./img/testimonials/testimonials-2.jpg"
+                    alt="tribute slider img"
+                  />
+                  <h2>Zarah Ahmadi</h2>
+                  <p>Ceo & Founder</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit nemo assumenda repellat quod vitae quae recusandae
+                    minima maxime animi provident assumenda.
+                  </p>
+                </div>
+                <div class="tri_box">
+                  <img
+                    src="./img/testimonials/testimonials-3.jpg"
+                    alt="tribute slider img"
+                  />
+                  <h2>Mariem Monir</h2>
+                  <p>Store Owner</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit nemo assumenda repellat quod vitae quae recusandae
+                    minima maxime animi provident assumenda.
+                  </p>
+                </div>
+                <div class="tri_box">
+                  <img
+                    src="./img/testimonials/testimonials-4.jpg"
+                    alt="tribute slider img"
+                  />
+                  <h2>Ali Hariwi</h2>
+                  <p>Full Stack</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit nemo assumenda repellat quod vitae quae recusandae
+                    minima maxime animi provident assumenda.
+                  </p>
+                </div>
+                <div class="tri_box">
+                  <img
+                    src="./img/testimonials/testimonials-1.jpg"
+                    alt="tribute slider img"
+                  />
+                  <h2>Dayan</h2>
+                  <p>Seo</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit nemo assumenda repellat quod vitae quae recusandae
+                    minima maxime animi provident assumenda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tri_btns">
+              <button id="tri_btn1"></button>
+              <button id="tri_btn2"></button>
+              <button id="tri_btn3"></button>
+              <button id="tri_btn4"></button>
+              <button id="tri_btn5"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Tribute Section -->
+
+      <!-- Latest News Section -->
+      <section class="latest-news">
+        <div class="container">
+          <h1>Latest News</h1>
+          <hr />
+          <div class="box">
+            <div class="image">
+              <a href="#"><img src="./img/blog/1.jpg" alt="" /></a>
+            </div>
+            <div class="text">
+              <a href="#">Assumenda repud eum veniam</a>
+              <p>
+                Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum
+                veniam optio modi sit explicabo nisi magnam quibusdam.sit amet
+                conse adipis elit Assumenda repud eum veniam optio modi sit
+                explicabo nisi magnam quibusdam.
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <a href="#"><img src="./img/blog/2.jpg" alt="" /></a>
+            </div>
+            <div class="text">
+              <a href="#">Explicabo magnam quibusdam.</a>
+              <p>
+                Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum
+                veniam optio modi sit explicabo nisi magnam quibusdam.sit amet
+                conse adipis elit Assumenda repud eum veniam optio modi sit
+                explicabo nisi magnam quibusdam.
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <a href="#"><img src="./img/blog/3.jpg" alt="" /></a>
+            </div>
+            <div class="text">
+              <a href="#">Lorem ipsum dolor sit amet</a>
+              <p>
+                Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum
+                veniam optio modi sit explicabo nisi magnam quibusdam.sit amet
+                conse adipis elit Assumenda repud eum veniam optio modi sit
+                explicabo nisi magnam quibusdam.
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Latest News Section -->
+
+      <!-- EBusiness Company -->
+      <section class="wel-company">
+        <div class="container">
+          <div class="text">
+            <h3>welcome to our ebusiness company</h3>
+            <a href="#" class="btn">get a quote</a>
+          </div>
+        </div>
+      </section>
+      <!-- End of EBusiness Company -->
+
+      <!-- Contact Us -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <hr />
+          <div class="icon">
+            <i class="bi bi-phone"></i>
+            <p>
+              Call: (0093) 795400371<br />
+              <span>Saturday-Thursday (8am-5pm)</span>
+            </p>
+          </div>
+          <div class="icon">
+            <i class="bi bi-envelope"></i>
+            <p>
+              Email: Famous@gmail.com<br />
+              <span>Web: www.famous.com</span>
+            </p>
+          </div>
+          <div class="icon">
+            <i class="bi bi-geo-alt"></i>
+            <p>
+              Location: Sherzy Street<br />
+              <span>NY 454545, AF</span>
+            </p>
+          </div>
+          <div class="box iframe">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
+              width="100%"
+              height="380"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="box">
+            <form>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Your Name"
+              /><br />
+              <input type="email" name="email" placeholder="Your Email" /><br />
+              <input type="text" name="subject" placeholder="Subject" /><br />
+              <textarea cols="30" rows="7" placeholder="Message"></textarea
+              ><br />
+              <button type="submit">send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End of Contact Us -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="box">
+            <h1><span>e</span>Business</h1>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis.
+            </p>
+            <ul>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h4>INFORMATION</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+            <h5><span>Tel:</span> +123 456 789</h5>
+            <h5><span>Email:</span> famous@gmail.com</h5>
+            <h5><span>Working Hours:</span> 8am-5pm</h5>
+          </div>
+          <div class="box">
+            <h4>INSTAGRAM</h4>
+            <a href="#"><img src="./img/portfolio/1.jpg" alt="" /></a>
+            <a href="#"><img src="./img/portfolio/2.jpg" alt="" /></a>
+            <a href="#"><img src="./img/portfolio/3.jpg" alt="" /></a>
+            <a href="#"><img src="./img/portfolio/4.jpg" alt="" /></a>
+            <a href="#"><img src="./img/portfolio/5.jpg" alt="" /></a>
+            <a href="#"><img src="./img/portfolio/6.jpg" alt="" /></a>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <p>&copy; Copyright <strong>eBusiness</strong>. All Rights Reserved</p>
+        <h4>Desginer: Marouf Ebrahimi</h4>
+      </div>
+      <!-- End of Footer -->
+
+      <!-- Up arrow -->
+      <div id="up-arrow" onclick="scrollTo(0, 0)">
+        <a href="#"><i class="bi bi-arrow-up-short"></i></a>
+      </div>
+    </section>
 
     <!-- Link of javaScript -->
     <script src="./js/javascript.js"></script>
-</body>
-
+  </body>
 </html>
