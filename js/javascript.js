@@ -32,6 +32,28 @@ link.forEach((ele) => {
   ele.addEventListener("click", activeLink);
 });
 
+// Active nav links when scroll the page
+let sections = document.querySelectorAll(".section_active");
+let navLinks = document.querySelectorAll(".navLinks");
+
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("active");
+        document
+          .querySelector(".navLinks[href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
+  });
+};
+
 // Script for slider
 var index = 1;
 slideShow(index);
