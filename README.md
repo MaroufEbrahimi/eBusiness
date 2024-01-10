@@ -14,5 +14,5 @@
 
 
 # Would you like to help and support me?
-* Star and follow my Github repository
+* Star this project and follow my Github repository
 ...
