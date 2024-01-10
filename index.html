@@ -24,7 +24,7 @@
             </h1>
           </div>
           <span class="open-slide">
-            <a href="#" onclick="openSlideMenu()">
+            <a onclick="openSlideMenu()">
               <svg id="svg" width="30" height="30">
                 <path d="M0,5 30,5" stroke="#fff" stroke-width="3" />
                 <path d="M0,14 30,14" stroke="#fff" stroke-width="3" />
@@ -55,13 +55,21 @@
             </ul>
           </nav>
           <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#" onclick="closeSlideMenu()">Home</a>
-            <a href="#about" onclick="closeSlideMenu()">About</a>
-            <a href="#services" onclick="closeSlideMenu()">Services</a>
-            <a href="#portfolio" onclick="closeSlideMenu()">Portfolio</a>
-            <a href="#team" onclick="closeSlideMenu()">Team</a>
-            <a href="#contact" onclick="closeSlideMenu()">Contact</a>
+            <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a class="link active" href="#home" onclick="closeSlideMenu()"
+              >Home</a
+            >
+            <a class="link" href="#about" onclick="closeSlideMenu()">About</a>
+            <a class="link" href="#services" onclick="closeSlideMenu()"
+              >Services</a
+            >
+            <a class="link" href="#portfolio" onclick="closeSlideMenu()"
+              >Portfolio</a
+            >
+            <a class="link" href="#team" onclick="closeSlideMenu()">Team</a>
+            <a class="link" href="#contact" onclick="closeSlideMenu()"
+              >Contact</a
+            >
           </div>
         </div>
       </header>
